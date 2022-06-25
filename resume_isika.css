@@ -1,0 +1,623 @@
+/*removing any existing margin from around the entire body*/
+body
+{
+    margin: 0%;
+}
+
+/*inserting a backdrop to the header*/
+header
+{
+    background-image: url(./header-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /*padding-bottom: 100px;*/
+    height: 65vh;
+    min-height: 300px;
+    max-height: 400px;
+}
+
+/*for the first list of internal links*/
+#traverse
+{
+    text-align: center;
+}
+
+#options
+{
+    color: rgb(255, 255, 255, 0.8);
+    font-family: monospace;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+#op 
+{
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#traverse li a
+{
+    font-weight: bold;
+    text-decoration: solid;
+    transition: opacity 0.2s, box-shadow 0.4s;
+}
+
+#traverse li a:hover
+{
+    opacity: 1;
+    box-shadow: 0px 0px 10px 6px rgb(255, 255, 255, 0.5);
+}
+
+/*for my name*/
+#my-name
+{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1.5em;
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 600px) 
+{
+    #my-name
+    {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: monospace;
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 1.5em;
+        margin-left: 1rem;
+    } 
+    #op 
+    {
+        margin-top: 20px;
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 5px;
+    }   
+    #options
+    {
+        color: rgb(255, 255, 255, 0.8);
+        font-family: monospace;
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+}
+
+/*for the list of social media accounts*/
+#social-media
+{
+    text-align: center;
+}
+
+Header ul li i
+{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: box-shadow 0.4s;
+}
+
+Header ul li i:hover
+{
+    box-shadow: 0px 0px 10px 6px rgb(255, 255, 255, 0.8);
+}
+
+#sm 
+{
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/*start of following sections*/
+#section:nth-child(2n)
+{
+    background-color: rgba(226, 212, 212, 0.5);
+}
+
+#part-heading
+{
+    text-align: center;
+    color: rgb(8, 6, 95);
+    font-family: monospace;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* section about starts*/
+#about
+{
+    width: 100vw;
+    margin-bottom: 2rem;
+}
+
+#my-pic
+{
+    width: 10em;
+    margin-top: -5em;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    box-shadow: 0px 10px 10px 4px rgba(138, 137, 137, 0.7);
+    border-radius: 50%;
+}
+
+#pic
+{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-height: 600px) 
+{
+    #pic
+    {
+        text-align: left;
+        margin-left: 5vw;
+        margin-bottom: 40px;
+    }
+    #social-media
+    {
+        text-align: right;
+        margin-right: 10vw;
+    }
+}
+
+#about p
+{
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
+    font-family: sans-serif;
+    color: rgb(77, 76, 76);
+    font-size: 0.8em;
+    font-weight: 500;
+    text-shadow: 10px rgba(138, 137, 137, 0.5);
+    overflow-wrap: break-word;
+}
+
+/*section skills start*/
+#skills
+{
+    background-color: rgba(226, 212, 212, 0.5);
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+#skill-cont
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#sk
+{
+    height: 5rem;
+    width: 16rem;
+    margin: 10px;
+}
+
+#total
+{
+    background-image: linear-gradient(rgb(224, 224, 224), rgb(255, 255, 255) 25%, rgb(224, 224, 224) 60%);
+    margin: auto;
+    height: 30px;
+    width: 200px;
+    box-shadow: 10px 10px 10px 4px rgba(131, 125, 125, 0.5);
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+
+#progress1
+{
+    background-image: linear-gradient(rgb(4, 4, 119), rgb(78, 78, 207) 25%, rgb(4, 4, 119) 60%);
+    border-radius: 20px 0px 0px 20px;
+    height: 30px;
+    width: 90%;
+}
+
+#progress2
+{
+    background-image: linear-gradient(rgb(255, 102, 0), rgb(255, 153, 0) 25%, rgb(255, 102, 0) 60%);
+    border-radius: 20px 0px 0px 20px;
+    height: 30px;
+    width: 80%;
+}
+
+#progress3
+{
+    background-image: linear-gradient(rgb(226, 2, 77), rgb(240, 90, 140) 25%, rgb(226, 2, 77) 60%);
+    border-radius: 20px 0px 0px 20px;
+    height: 30px;
+    width: 75%;
+}
+
+#progress4
+{
+    background-image: linear-gradient(rgb(6, 129, 6), rgb(12, 197, 12) 25%, rgb(6, 129, 6) 60%);
+    border-radius: 20px 0px 0px 20px;
+    height: 30px;
+    width: 60%;
+}
+
+#progress5
+{
+    background-image: linear-gradient(rgb(0, 174, 255), rgb(0, 225, 255) 25%, rgb(0, 174, 255) 60%);
+    border-radius: 20px 0px 0px 20px;
+    height: 30px;
+    width: 80%;
+}
+
+#progress6
+{
+    background-image: linear-gradient(rgb(143, 7, 120), rgb(194, 6, 163) 25%, rgb(143, 7, 120) 60%);
+    border-radius: 20px 0px 0px 20px;
+    height: 30px;
+    width: 70%;
+}
+
+#skill-name
+{
+    color: rgb(255, 255, 255, 0.9);
+    font-family: monospace;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+/*section education starts*/
+#education
+{
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+#education div p
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: monospace;
+    overflow-wrap: break-word;
+}
+
+#education div
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#timeline
+{
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.tl-box:nth-child(2n+1)
+{
+    left: 5%;
+    text-align: right;
+}
+
+.tl-box:nth-child(2n)
+{
+    left: 54%;
+}
+
+.tl-box:nth-child(2n+1)::after 
+{
+    content: '';
+    position: absolute;
+    top: 34%;
+    right: -12.7%;
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: rgb(204, 201, 201);
+    z-index: 1;
+}
+
+.tl-box:nth-child(2n)::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -12.20%; 
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: rgb(204, 201, 201);
+    z-index: 1;
+}
+
+.tl-box
+{
+    width: 40%;
+    position: relative;
+    margin: 5px;
+    left: 5%;
+    min-height: 150px;
+}
+
+.timeline-divider 
+{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    background-color: rgba(175, 162, 162, 0.5);
+    border: 2px solid rgba(175, 162, 162, 0.1);
+    border-radius: 20px 20px 20px 20px;
+    top: 5%;
+    left: 50%;
+}
+
+.timeline-traveller 
+{
+    position: sticky;
+    font-size: 20px;
+    color: rgb(8, 6, 95);
+    top: 20%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+@media screen and (max-width: 700px) 
+{
+    #timeline
+    {
+        position: relative;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .tl-box:nth-child(2n+1)
+    {
+        left: 20%;
+        text-align: left;
+    }
+
+    .tl-box:nth-child(2n)
+    {
+        left: 20%;
+    }
+
+    .tl-box:nth-child(2n+1)::after 
+    {
+        content: '';
+        position: absolute;
+        top: 34%;
+        left: -18%;
+        border-radius: 50%;
+        width: 0.7rem;
+        height: 0.7rem;
+        background-color: rgb(204, 201, 201);
+        z-index: 1;
+    }
+
+    .tl-box:nth-child(2n)::after {
+        content: '';
+        position: absolute;
+        top: 30%;
+        left: -18%; 
+        border-radius: 50%;
+        width: 0.7rem;
+        height: 0.7rem;
+        background-color: rgb(204, 201, 201);
+        z-index: 1;
+    }
+
+    .tl-box
+    {
+        width: 70%;
+        position: relative;
+        margin: 5px;
+        min-height: 150px;
+    }
+
+    .timeline-divider 
+    {
+        position: absolute;
+        height: 75%;
+        width: 0;
+        background-color: rgba(175, 162, 162, 0.5);
+        border: 2px solid rgba(175, 162, 162, 0.1);
+        border-radius: 20px 20px 20px 20px;
+        top: 10%;
+        left: 10%;
+    }
+
+    .timeline-traveller 
+    {
+        position: sticky;
+        font-size: 20px;
+        color: rgb(8, 6, 95);
+        top: 20%;
+        transform: rotate(90deg);
+        z-index: 2;
+    }
+}
+
+#course-name
+{
+    color: rgb(8, 6, 95);
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#school-name
+{
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#time-span
+{
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: 0.8rem;
+}
+
+#course-info
+{
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: 0.7rem;
+}
+
+/*section contact starts*/
+#contact
+{
+    background-color: rgb(13, 13, 77);
+    padding: 5%;
+}
+
+#contact h3
+{
+    color: rgb(255, 255, 255);
+}
+
+#form
+{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#personal-info
+{
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10%;
+}
+
+#input-sp
+{
+    margin: 20px;
+}
+
+#m-space
+{
+    width: 95%;
+    background-color: rgb(0, 0, 0, 0);
+    color: rgb(255, 255, 255, 1);
+    outline: none;
+    border-bottom: 2px solid white;
+    padding: 2px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+#m-space-big
+{
+    width: 95%;
+    background-color: rgb(0, 0, 0, 0);
+    outline-color: transparent;
+    color: rgb(255, 255, 255, 1);
+    border-bottom: 2px solid white;
+    outline: none;
+    resize: initial;
+    padding: 2px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+#user-info div label, #m-space-hd
+{
+    color: rgb(255, 255, 255, 0.7);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+#m-button
+{
+    background-color: rgb(9, 0, 87, 0);
+    color: rgb(255, 255, 255);
+    height: 25px;
+    width: 100px;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    margin: 20px;
+}
+
+#personal-info h5
+{
+    color: rgb(255, 255, 255, 0.7);
+    font-family: monospace;
+    font-size: 18px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+#personal-info p
+{
+    font-family: monospace;
+    font-size: 12px;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+#social-media li i
+{
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+#social-media li i:hover
+{
+    box-shadow: 0px 0px 10px 4px rgb(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 700px) 
+{
+    #contact
+    {
+        background-color: rgb(13, 13, 77);
+        background-size: cover;
+        padding: 5%;
+    }
+
+    #form
+    {
+       display: block;
+       width: 80%;
+    }
+    
+    #personal-info
+    {
+        margin-top: 40px;
+        display: block;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
+
+
